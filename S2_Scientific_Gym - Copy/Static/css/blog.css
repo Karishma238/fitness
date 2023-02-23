@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    padding: 0px clamp(20px, 10vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(73, 73, 73, 0.4);
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar .logo img {
+    /* color: whitesmoke;
+    font-size: 28px;
+    font-weight: 600; */
+    width: 100px;
+}
+
+.navbar .list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar li a {
+    color: whitesmoke;
+}
+
+.navbar .list input {
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    background-color: #000;
+    padding: 0px 10px;
+}
+
+.navbar .list .login {
+    padding: 2px 10px;
+    color: #000;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#check,
+label {
+    display: none;
+    font-size: 24px;
+    padding: 0px 0px;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+/* Blog Home Section */
+
+.home {
+    width: 100%;
+    height: auto;
+    /* margin: 50px auto; */
+    padding: 40px clamp(10px, 5vw, 100px) 40px clamp(10px, 5vw, 100px);
+    background-color: #161b21;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid darkmagenta; */
+}
+
+.home-left-container {
+    width: 50%;
+    margin: 0px 20px 10px 0;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    /* border: 2px solid red; */
+    padding: 0px 0px 20px 0px;
+}
+
+.home-left-container img {
+    width: 100%;
+}
+
+.home-left-container h3 {
+    font-size: 18px;
+}
+
+.home .home-left-container h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.home h4 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.home-left-container i {
+    padding: 0px 5px;
+}
+
+.home-date-time {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+
+.home-right-container {
+    width: 50%;
+    /* border: 2px solid red; */
+    margin: 0px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home-blog-container {
+    background-color: whitesmoke;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 10px 0px 0px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-blog-img {}
+
+.home-blog-img img {
+    margin: 15px 20px;
+    width: 87px;
+    height: 80px;
+    /* border: 2px solid; */
+}
+
+.home-right-container h3 {
+    /* text-align: ; */
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: 500;
+}
+
+.home-right-container h4 {
+    font-size: clamp(14px, 1vw, 18px);
+
+}
+
+.home-right-container i {
+    padding: 0px 5px;
+}
+
+
+
+
+
+
+
+/* Calculator Section  */
+
+.calculator {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    padding: 40px clamp(10px, 5vw, 100px) 40px clamp(10px, 5vw, 100px);
+    /* background-color: #161b21; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    border: 2px solid darkmagenta;
+
+}
+
+.calculator-left-container {
+    width: 50%;
+    /* border: 2px solid; */
+    text-align: justify;
+}
+
+.calculator-right-container {
+    width: 40%;
+    /* border: 2px solid; */
+}
+
+.calculator img {
+    width: 100%;
+    /* float: right; */
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+
+
+
+/* Fitness Section */
+
+.fitness {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    padding: 40px clamp(10px, 5vw, 100px) 40px clamp(10px, 5vw, 100px);
+    /* align-items: center; */
+    /* background-color: #161b21; */
+
+    border: 2px solid darkmagenta;
+}
+
+.fitness-line {
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fitness h1 {
+    border-bottom: 2px solid;
+    padding: 0px 10px 0px 0px;
+}
+
+.fitness span {
+    float: right;
+    color: blue;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fitness-container {
+    /* border: 2px solid; */
+    margin: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fitness-content {
+    width: 380px;
+    /* border: 1px solid; */
+    box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.fitness-content h3 {
+    font-size: clamp(14px, 8vw, 16px);
+    font-weight: 500;
+    padding: 10px;
+}
+
+.fitness-content h4 {
+    font-size: clamp(12px, 8vw, 14px);
+    font-weight: 500;
+    text-align: left;
+    padding: 0px 10px 10px 10px;
+
+}
+
+.fitness-container img {
+    width: 100%;
+}
+
+
+
+
+.subscribe {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    padding: 40px clamp(10px, 5vw, 100px) 40px clamp(10px, 5vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: #161b21; */
+
+    /* border: 2px solid darkmagenta; */
+    box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.subscribe-left-container {
+    width: 45%;
+    padding: 20px 0px;
+    /* border: 2px solid; */
+    font-size: 20px;
+}
+
+.subscribe-right-container {
+    width: 55%;
+    /* border: 2px solid;  */
+
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    margin: 20px 0px;
+}
+
+.subscribe input[type=text] {
+    width: 70%;
+    height: 50px;
+    border: none;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    /* color: whitesmoke; */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0px 10px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.subscribe input[type=submit] {
+    width: 20%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: rgb(246, 97, 16);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Very small Devices */
+@media screen and (max-width: 400px) {}
+
+/* Android Smartphones */
+@media screen and (max-width: 480px) {}
+
+/* Large Android Smartphones */
+@media screen and (max-width: 767px) {
+    .search {
+        display: none;
+    }
+
+    label {
+        display: block;
+    }
+
+    .navbar .list {
+        display: block;
+        position: fixed;
+        /* top: -100%; */
+        top: 80px;
+        /* left: -100%; */
+        right: -100%;
+        background-color: #333;
+        width: 100%;
+        height: 100vh;
+        /* border-radius: 0%; */
+        text-align: center;
+        /* padding: 20px ; */
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar li {
+        padding: 20px 0px;
+    }
+
+    #check:checked~.list {
+        /* left: 0px; */
+        right: 0px;
+        top: 80px;
+        border-radius: 0%;
+    }
+
+}
+
+/*  Tablets*/
+@media screen and (max-width: 1000px) {
+    .navbar .list input {
+        display: none;
+    }
+
+    .navbar .list .login {
+        display: none;
+    }
+
+    .home {
+        display: block;
+        height: auto;
+        /* padding: 40px clamp(10px, 10vw, 50px) 40px clamp(10px, 10vw, 50px); */
+
+    }
+
+    .home-left-container {
+        width: 100%;
+    }
+
+    .home-right-container {
+        width: 100%;
+        margin: 0px 0 0 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Starting of Footer Section  */
+
+.footer {
+    background-color: #000;
+    padding: 10px 50px;
+}
+
+.footer .footer-head {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.footer form {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    margin: 20px 0px;
+}
+
+.footer input[type=text] {
+    width: 40%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0px 10px;
+}
+
+.footer input[type=submit] {
+    width: 10%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+.footer-container {
+    max-width: 1170px;
+    background-color: #000;
+    margin: auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column {
+    width: 17%;
+    padding: 0 15px;
+}
+
+.footer-contact-column {
+    width: 32%;
+    padding: 0 15px;
+}
+
+.footer-column,
+.footer-contact-column,
+.footer-heading {
+    font-size: 14px;
+    color: whitesmoke;
+    /* text-transform: capitalize; */
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer .footer-heading {
+    font-size: 20px;
+}
+
+/* .foote-column,
+.footer-contact-column ul li:not(:last-child) {
+    margin-bottom: 10px;
+} */
+
+.footer-column,
+.footer-contact-column ul,
+li,
+a {
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(180, 180, 180);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-column,
+.footer-contact-column,
+ul,
+li,
+a:hover {
+    color: #fff;
+}
+
+
+.footer-social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-media h3 a {
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+@media(max-width: 767px) {
+
+    .footer-column,
+    .footer-contact-column {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer input[type=text] {
+        width: 70%;
+    }
+
+    .footer input[type=submit] {
+        width: 30%;
+    }
+}
+
+@media(max-width: 574px) {
+
+    .footer-column,
+    .footer-contact-column {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Ending of Footer Section  */

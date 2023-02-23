@@ -1,0 +1,494 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2 Scientific Gym</title>
+
+    <link rel="stylesheet" href='{% static "css/index.css" %}' type="text/css">
+    <script src="https://kit.fontawesome.com/50f95dd8c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="{% static 'images/logo-1.png' %}" alt=""></div>
+        <input type="checkbox" name="" id="check">
+        <label for="check"><i class="fas fa-bars"></i></label>
+
+
+        <ul class="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Workout</a></li>
+            <li><a href="#">Trainer</a></li>
+            <li><a href="#">Healthy Lives</a></li>
+            <li><a href="#">Payment</a></li>
+        </ul>
+        <ul class="list">
+            <li>
+                <!-- <i style="color: white; background-color: cadetblue;" class="uil uil-search"></i> -->
+                <input type="text" placeholder="search here">
+                <i class=""></i>
+            </li>
+            <li><a href="#" class="login">Login</a></li>
+        </ul>
+    </nav>
+
+  {% block content %}
+
+    <section class="home">
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="{% static 'images/slide-4.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'images/slide-2.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'images/slide-3.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'images/slide-2.jpg' %}" alt=""></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="achieve">
+
+        <!-- <h1 class="achieve-heading">ACHIEVE YOUR GOAL FASTER</h1> -->
+
+        <div class="achieve-container">
+            <div class="achieve-cards">
+                <img src="{% static 'images/affordable-price.png' %}" alt="">
+                <h2>Afordable Price</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores labore in earum, odio illo?
+                </p>
+            </div>
+
+            <div class="achieve-cards">
+                <img src="{% static 'images/gym-equipment.png' %}" alt="">
+                <h2>Latest Gym Equipment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores labore in earum, odio illo?
+                </p>
+            </div>
+
+            <div class="achieve-cards">
+                <img src="{% static 'images/trainer.png'%}" alt="">
+                <h2>Exprerinced Trainer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores labore in earum, odio illo?
+                </p>
+            </div>
+
+            <div class="achieve-cards">
+                <img src="{% static 'images/suppliments-protein.png' %}" alt="">
+                <h2>Diet and Suppliments</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores labore in earum, odio illo?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="training-type">
+        <div class="training-container">
+            <div class="training-wrapper">
+                <img src="{% static 'images/weight-lifting.png' %}" alt="">
+                <h2>Muscle Building</h2>
+            </div>
+            <div class="training-wrapper">
+                <img src="{% static 'images/fat-loss.png' %}" alt="">
+                <h2>Fat Loss</h2>
+            </div>
+            <div class="training-wrapper">
+                <img src="{% static 'images/cardio.png' %}" alt="">
+                <h2>Cardio</h2>
+            </div>
+            <div class="training-wrapper">
+                <img src="{% static 'images/weight-training.png' %}" alt="">
+                <h2>Body weight</h2>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="provide">
+        <h1 class="provide-heading">We are providing</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam eveniet sed perferendis perspiciatis
+            magni doloribus molestias harum totam temporibus.</p>
+
+        <div class="provide-container">
+            <div class="provide-content">
+                <div class="p-img-data">
+                    <img src="{% static 'images/changing-room.png' %}" alt="">
+                </div>
+                <h2>Changing Room</h2>
+            </div>
+
+            <div class="provide-content">
+                <div class="p-img-data">
+                    <img src="{% static 'images/lockers.png' %}" alt="">
+                </div>
+                <h2>Locker</h2>
+            </div>
+
+            <div class="provide-content">
+                <div class="p-img-data">
+                    <img src="{% static 'images/wifi.png' %}" alt="">
+                </div>
+                <h2>WIFI</h2>
+            </div>
+
+            <div class="provide-content">
+                <div class="p-img-data">
+                    <img src="{% static 'images/air-conditioner.png' %}" alt="">
+                </div>
+                <h2>Lounge Area</h2>
+            </div>
+
+            <div class="provide-content">
+                <div class="p-img-data">
+                    <img src="{% static 'images/water-dispenser.png' %}" alt="">
+                </div>
+                <h2>Water Dispenser</h2>
+            </div>
+
+            <div class="provide-content">
+                <div class="p-img-data">
+                    <img src="{% static 'images/kickboxing.png' %}" alt="">
+                </div>
+                <h2>Kickboxing Zone</h2>
+            </div>
+
+            <div class="provide-content">
+                <div class="p-img-data">
+                    <img src="{% static 'images/kickboxing.png' %}" alt="">
+                </div>
+                <h2>Kickboxing Zone</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="gallary">
+        <h1>Gym Gallary</h1>
+
+        <div class="gallary-container">
+            <img src="{% static 'images/slide-1.jpg' %}" alt="">
+            <img src="{% static 'images/slide-4.jpg' %}" alt="">
+            <img src="{% static 'images/slide-3.jpg' %}" alt="">
+            <img src="{% static 'images/slide-2.jpg' %}" alt="">
+            <img src="{% static 'images/home-1.jpg' %}" alt="">
+            <img src="{% static 'images/slide-1.jpg' %}" alt="">
+
+        </div>
+    </section>
+
+
+
+    <section class="timing">
+        <div class="timing-container">
+
+            <div class="timing-left-container">
+                <img src="{% static 'images/slide-4.jpg' %}" alt="">
+            </div>
+
+            <div class="timing-middle-container">
+                <div class="timing-middle-content">
+                    <img src="{% static 'images/clock.png' %}" alt="">
+                    <h1>Timing Hours</h1>
+                    <h2>(Monday - Saturday)</h2>
+                    <h3>Morning:- 06:00 AM - 12:00 PM</h3>
+                    <h3>Evening:- 05:00 PM - 10:00 PM</h3>
+                </div>
+            </div>
+
+            <div class="timing-right-container">
+                <div class="timing-right-content">
+                    <img src="{% static 'images/clock.png' %}" alt="">
+                    <h1>Happy Hours</h1>
+                    <h2>(Monday - Saturday)</h2>
+                    <h3>Afternoon:- 12:00 PM - 03:00 PM</h3>
+                    <h3>Sunday Off</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="register">
+        <h1 class="register-heading">Enquiry Form</h1>
+
+        <div class="register-container">
+            <div class="register-left-content">
+                <img src="{% static 'images/register.png' %}" alt="">
+            </div>
+
+            <div class="register-right-content">
+                <form method="post" action="/register">
+                    {% csrf_token %}
+                    <input type="text" placeholder="Name" name="Uname" required="">
+                    <br>
+                    <input type="text" placeholder="Email" name="Email" required="">
+                    <br>
+                    <input type="text" placeholder="Phone Number" name="Phone" required="">
+                    <br>
+                    <input type="text" placeholder="Location" name="Location">
+                    <br>
+                    <textarea id="" cols="30" rows="5" placeholder="Message..." name="Msg" required=""></textarea>
+                    <br>
+                    <input id="register-submit" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="review">
+        <h1 class="review-heading">Reviews</h1>
+
+
+        <!-- Starting of Student Review  Section -->
+
+        <div class="review-container">
+
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="{% static 'images/arya.jpg' %}" alt="">
+                            </div>
+                            <div>
+                                <h3>Arya Lanjewar<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p> I have my gratitude to them for making me bulky from a skinny girl! trainers are good, loved the way they advised us and showed us the right movement or how to concentrate while doing our sets. 
+                                    I learned a lot from this gym and the workouts were really fun with friends there."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="{% static 'images/sachin.jpg' %}" alt="">
+                            </div>
+                            <div>
+                                <h3>Sachin Sontakke<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>S2 Scientific Fitness is not a gym but a family. we not only workout but also make bond of togetherness.
+                                    It also gives many more features other than exercises. 
+                                    I am happy to be a part of S2 Scientific Fitness and will always be there.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="{% static 'images/yash.jpg' %}" alt="">
+                            </div>
+                            <div>
+                                <h3>Yashn Yelpande<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Very neatly maintained gym. Great place to workout with flexible timings.
+                                    Had excellent equipment. Trainers are very easy-going, good at communicating, and keeps you motivated.
+                                    I’ve been going for a little bit and am already seeing a big change in my energy levels and body.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="{% static 'images/rizik.jpg' %}" alt="">
+                            </div>
+                            <div>
+                                <h3>Rizik Mohammad<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>It’s been a month here and we are really enjoying. 
+                                    The staff and trainers are very warm and welcoming people. 
+                                    We have interacted with most of the trainers and know that they are all very knowledgeable in fitness.
+                                    We are looking forward to getting fitter and healthier. 
+                                    Thanks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="{% static 'images/atik.jpg' %}" alt="">
+                            </div>
+                            <div>
+                                <h3>Atik Mohammad<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>After a hard day's work, spending an hour in the gym at the S2 Scientific Fitness in Nagpur is a joy.
+                                    The very professional coach, always smiling and courteous, instills a feeling of relaxation and harmony that are the right notes to feel at ease.
+                                    Overall highly recommended.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="{% static 'images/aniket.jpg' %}" alt="">
+                            </div>
+                            <div>
+                                <h3>Aniket Chaliye<br><span class="review-title"> Client </span></h3>
+                            </div>
+                            <div class="para">
+                                <p>This is a fantastic gym!! All the trainers are super nice and take an interest in you no matter what fitness level you’re at. 
+                                    I really like how they give me tips and tricks to get the most out of every workout.  
+                                    It's great!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="{% static 'images/abhay.jpg' %}" alt="">
+                            </div>
+                            <div>
+                                <h3>Abhay Deshmukh<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>If you are fitness fan, then you have to visit this place. Actually this place is very hygienic, cool. 
+                                    There are many updated equipments for workout.
+                                    Pleasant ambience, well trained staff and world class equipments makes this gym perfect place for work out.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <!-- Ending of Students reviews Section -->
+
+
+
+    </section>
+  {% endblock %}
+
+
+
+
+
+    <!-- Starting of Footer Section -->
+
+    <footer class="footer">
+        <h1 class="footer-head">Get Offer Updates</h1>
+        <div class="footer-subscribe">
+            <form action="">
+                <input type="text" placeholder="example@gmail.com">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <img src="{% static 'images/logo-1.png' %}" width="120px" alt="">
+                </div>
+
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Workout</a></li>
+                        <li><a href="#">Trainer</a></li>
+                        <li><a href="#">Healthy Lives</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">About</h4>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Pick & Drop</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-column">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul>
+                        <!-- <li style="text-transform: lowercase;"><a href="#"><span><i class="uil uil-envelope-alt"></i></span>example@gmail.com</a></li> -->
+                        <li style="text-transform: lowercase;"><a href="#"><span><i
+                                        class="uil uil-envelope-alt"></i></span>example@gmail.com</a></li>
+                        <li><a href="#"><span><i class="uil uil-phone"></i></span>+91 1231231230</a></li>
+                        <li><a href="#"><span><i class="uil uil-map-marker"></i></span>S2 Scientific Fitness Gym,
+                                Nagpur, India, 440024 </a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="footer-social-media">
+                <ul>
+                    <li>
+                        <h3 style="font-size: 20px;"><a href="#">Follow Us On:</a></h3>
+                    </li>
+                    <li><i class="uil uil-facebook-f"></i>
+                        <i class="uil uil-instagram"></i>
+                        <i class="uil uil-twitter"></i>
+                        <i class="uil uil-youtube"></i>
+                        <i class="uil uil-google"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <script src="{% static 'js/swiper.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/review.js' %}" type="text/javascript"></script>
+</body>
+
+</html>

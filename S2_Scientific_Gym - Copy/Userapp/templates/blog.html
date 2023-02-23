@@ -1,0 +1,215 @@
+{% extends "index.html" %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2 Gym-Blog</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" type="text/css">
+
+    <script src="https://kit.fontawesome.com/50f95dd8c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+   
+    <section class="home">
+        <div class="home-left-container">
+            <img src="{% static 'images/slide-4.jpg' %}" alt="">
+            <h3>How are Mental and Physical Health Connected</h3>
+            <div class="home-date-time">
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+                <h4><i class="fa fa-light fa-clock"></i>30 min read</h4>
+            </div>
+
+        </div>
+
+
+        <div class="home-right-container">
+            <div class="home-blog-container">
+                <div class="home-blog-img">
+                    <img src="{% static 'images/home-4.png' %}" alt="">
+                </div>
+                <div class="home-blog-heading">
+                    <h3>Punch The Fat Away! - Fitness Boxing For Weight Loss</h3>
+                    <div class="home-date-time">
+                        <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+                        <h4><i class="fa fa-light fa-clock"></i>30 min read</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-blog-container">
+                <div class="home-blog-img">
+                    <img src="{% static 'images/slide-3.jpg' %}" alt="">
+                </div>
+                <div class="home-blog-heading">
+                    <h3>Punch The Fat Away! - Fitness Boxing For Weight Loss</h3>
+                    <div class="home-date-time">
+                        <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+                        <h4><i class="fa fa-light fa-clock"></i>30 min read</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-blog-container">
+                <div class="home-blog-img">
+                    <img src="{% static 'images/slide-3.jpg' %}" alt="">
+                </div>
+                <div class="home-blog-heading">
+                    <h3>Punch The Fat Away! - Fitness Boxing For Weight Loss</h3>
+                    <div class="home-date-time">
+                        <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+                        <h4><i class="fa fa-light fa-clock"></i>30 min read</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="calculator">
+        <div class="calculator-left-container">
+            <h1 class="calculator-heading">Calories Burned Calculator</h1>
+            <p>Free calculator to estimate the number of calories burned during routine daily activities or a workout
+                based on activity duration.
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum reprehenderit temporibus, laborum
+                officiis, repellat, rerum odit optio modi quam amet doloremque aliquam earum cum unde quod tempora
+                asperiores ipsa. Ex!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus esse perferendis doloremque eaque cum
+                iste assumenda eum accusantium, similique eligendi veritatis autem consequuntur, explicabo sint magnam.
+                Libero totam quis excepturi!
+            </p>
+        </div>
+
+        <div class="calculator-right-container">
+            <img src="{% static 'images/slide-4.jpg' %}" alt="">
+        </div>
+    </section>
+
+
+    <section class="fitness">
+        <div class="fitness-line">
+            <h1>Fitness </h1>
+            <span>View all</span>
+        </div>
+
+        <div class="fitness-container">
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-4.jpg' %}" alt="">
+                <h3>Toning, Flexibility, And Strength - Can workout do it all?</h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-3.jpg' %}" alt="">
+                <h3>How to keep your heart healthy?How are Mental and Physical Health Connected</h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-1.jpg' %}" alt="">
+                <h3>Your guide to the right pre-workout fuel </h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="fitness">
+        <div class="fitness-line">
+            <h1>Weight Loss </h1>
+            <span>View all</span>
+        </div>
+
+        <div class="fitness-container">
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-4.jpg' %}" alt="">
+                <h3>Punch the fat away! - Fitness boxing for weight loss</h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-3.jpg' %}" alt="">
+                <h3>Lose weight - one rep at a time </h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-1.jpg' %}" alt="">
+                <h3>The H-To-O Of Water Weight: Everything You Need To Know</h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="fitness">
+        <div class="fitness-line">
+            <h1>Healthy Diet </h1>
+            <span>View all</span>
+        </div>
+
+        <div class="fitness-container">
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-4.jpg' %}" alt="">
+                <h3>Your guide to hacking the indian kitchen</h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-3.jpg' %}" alt="">
+                <h3>The truth behind your favorite Tea's and what you should do differently</h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+            <div class="fitness-content">
+                <img src="{% static 'images/slide-1.jpg' %}" alt="">
+                <h3>Apple cider vinegar - What does it really do?</h3>
+                <h4><i class="fa fa-light fa-calendar"></i> Dec 20, 2022</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="subscribe">
+
+        <div class="subscribe-left-container">
+            <p>Get a daily dose of latest stories and useful tips directly in your inbox!</p>
+        </div>
+
+        <div class="subscribe-right-container">
+            <form action="">
+                <input type="text" placeholder="example@gmail.com">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+ 
+
+</body>
+
+</html>
+{% endblock %}
