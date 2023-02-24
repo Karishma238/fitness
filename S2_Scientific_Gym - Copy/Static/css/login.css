@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url('img/slide-2.jpg');
+    object-fit: cover;
+    background-position: center center;   
+    background-size: cover;
+}
+
+
+/* 
+.login-container{
+    color: white;
+    margin: 100px auto;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0px 0px 50px 0px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+.login-container h1{
+    padding: 35px;
+} */
+
+.form-box{
+    width: 450px;
+    height: 500px;
+    position: relative;
+    margin: 4% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 10% 25%;
+    border: 5px solid #F05F28;
+}
+.btn-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba( 0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.toggle-btn{
+    padding: 12px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    position: relative;
+    /* color: white; */
+    font-size: 16px;
+    font-weight: 600;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #F05F28, orange);
+    border-radius: 20px;
+    transition: all .5s ease;
+}
+
+.input-group{
+    top: 120px;
+    position: absolute;
+    /* width: 280px; */
+    width: 70%;
+    transition: 0.5s;
+}
+.input-field{
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 10px;
+    /* border: 1px solid #999; */
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+#forget-pass{
+    margin: 0px 10px 30px 20px;
+    color: #f47847;
+}
+.check-box{
+    margin: 20px 10px 20px 20px;
+}
+.check-box-text{
+    color: black;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #F05F28, orange);
+    outline: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+
+
+
+
+
+
+
+/* 
+input{
+    margin: 10px;
+    width: 80%;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 1px;
+    border: none;
+    height: 30px;
+} */
+
+input[type=submit] {
+    background-color: #F05F28;
+    border-radius: 10px;
+    border: none;
+
+}
+.register{
+    margin: 0px 0px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+span a{
+    /* border: 2px solid; */
+    margin: 0px 50px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+span a:hover{
+color: #F05F28;
+
+}

@@ -1,0 +1,330 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2-Gym Workout</title>
+    <link rel="stylesheet" href="{% static 'css/workout.css' %}" type="text/css">
+
+    <script src="https://kit.fontawesome.com/50f95dd8c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <section class="workout-home">
+        <h1>Transform your life for better</h1>
+        <p>If you want something you’ve bever hard, you must be willing to do something you’ve never done.</p>
+        <a href="#" class="start-btn">START</a>
+    </section>
+
+
+    <section class="workout-types">
+        <div class="workout-types-container">
+            <div class="workout-types-content">
+                <img id="img-data" src="img/Weight-lifting.jpg" alt="">
+                <div class="text-wrapper">
+                    <img id="workout-icon" src="img/man-lifting-weight.png" alt="">
+                    <h1>Weight Lifting</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium consequuntur eos fuga atque
+                    necessitatibus nihil. Debitis vero vel dolorum quia quibusdam maxime voluptates autem praesentium
+                    incidunt, quod quasi iusto in.</p>
+
+                <a href="workout-category.html">More
+                    <i class="fas fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="workout-types-content">
+                <img id="img-data" src="img/home-7.jpg" alt="">
+                <div class="text-wrapper">
+                    <img id="workout-icon" src="img/treadmill.png" alt="">
+                    <h1>Cardio</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium consequuntur eos fuga atque
+                    necessitatibus nihil. Debitis vero vel dolorum quia quibusdam maxime voluptates autem praesentium
+                    incidunt, quod quasi iusto in.</p>
+
+                <a href="#">More
+                    <i class="fas fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="workout-types-content">
+                <img id="img-data" src="img/crossfit.jpg" alt="">
+                <div class="text-wrapper">
+                    <img id="workout-icon" src="img/battle-rope.png" alt="">
+                    <h1>Crossfit</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium consequuntur eos fuga atque
+                    necessitatibus nihil. Debitis vero vel dolorum quia quibusdam maxime voluptates autem praesentium
+                    incidunt, quod quasi iusto in.</p>
+
+                <a href="#">More
+                    <i class="fas fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="workout-types-content">
+                <img id="img-data" src="img/kickboxing-3.jpg" alt="">
+                <div class="text-wrapper">
+                    <img id="workout-icon" src="img/kickboxing1.png" alt="">
+                    <h1>Kickboxing</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium consequuntur eos fuga atque
+                    necessitatibus nihil. Debitis vero vel dolorum quia quibusdam maxime voluptates autem praesentium
+                    incidunt, quod quasi iusto in.</p>
+
+                <a href="#">More
+                    <i class="fas fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trainers Details Section -->
+
+    <section class="trainer">
+        <h1 class="trainer-heading">Gym Trainer</h1>
+        <div class="trainer-container">
+            <div class="trainer-content">
+                <div class="img-data">
+                    <img src="img/slide-4.jpg" alt="">
+                </div>
+                <h1>Trainer Name</h1>
+                <h4>Weight Lifting</h4>
+            </div>
+
+            <div class="trainer-content">
+                <div class="img-data">
+                    <img src="img/slide-3.jpg" alt="">
+                </div>
+                <h1>Trainer Name</h1>
+                <h4>Cardio</h4>
+            </div>
+
+            <div class="trainer-content">
+                <div class="img-data">
+                    <img src="img/slide-2.jpg" alt="">
+                </div>
+                <h1>Trainer Name</h1>
+                <h4>Crossfit</h4>
+            </div>
+
+            <div class="trainer-content">
+                <div class="img-data">
+                    <img src="img/slide-1.jpg" alt="">
+                </div>
+                <h1>Trainer Name</h1>
+                <h4>Kickboxing</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Plan and Offer section  -->
+    <section class="plan">
+
+        <h1 class="plan-heading">Our Pricing and Plan 40% dicount</h1>
+
+        <div class="plan-container">
+            <div class="plan-content">
+                <h1>Free Plan</h1>
+                <h4 class="price">Rs. 0
+                    <span class="free">Forever free</span>
+                </h4>
+
+                <ul>
+                    <li>Search Places</li>
+                    <li>Limited Places</li>
+                    <li>Free Consulting</li>
+                </ul>
+                <a href="#">Free Trial</a>
+            </div>
+
+            <div class="plan-content special-plan">
+                <h1>Premium Plan</h1>
+                <h4 class="price">Rs. 1500/Month
+                    <!-- <span class="free">Forever free</span> -->
+                </h4>
+
+                <ul>
+                    <li>Search Places</li>
+                    <li>Limited Places</li>
+                    <li>Free Consulting</li>
+                </ul>
+                <a href="#">Free Trial</a>
+            </div>
+
+            <div class="plan-content">
+                <h1>Free Plan</h1>
+                <h4 class="price">Rs. 0
+                    <span class="free">Forever free</span>
+                </h4>
+
+                <ul>
+                    <li>Search Places</li>
+                    <li>Limited Places</li>
+                    <li>Free Consulting</li>
+                </ul>
+                <a href="#">Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="review">
+        <h1 class="review-heading">Reviews</h1>
+
+
+        <!-- Starting of Student Review  Section -->
+
+        <div class="review-container">
+
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="img/home-5.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName-1<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae numquam, similique
+                                    sed, praesentium rem libero enim ad velit reprehenderit quis atque, sunt laborum
+                                    deserunt itaque eum sequi explicabo aut debitis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="img/slide-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName-2 <br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis enim
+                                    provident magnam cumque obcaecati neque quia architecto nesciunt voluptatem saepe
+                                    laborum, reprehenderit laboriosam molestias eum in nostrum totam quaerat!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="img/slide-3.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName-3<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio exercitationem
+                                    delectus nihil facere voluptatum eveniet ab vel? Quidem reprehenderit corrupti nulla
+                                    impedit, odit molestias assumenda quisquam, vero porro officiis totam!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="img/slide-4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName-4<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quasi assumenda incidunt
+                                    soluta voluptatibus vero, quia ipsa itaque dolores, porro iusto quibusdam illo?
+                                    Soluta aliquid ipsam quisquam quidem dolorem. Laudantium!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="img/slide-4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName-5<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quasi assumenda incidunt
+                                    soluta voluptatibus vero, quia ipsa itaque dolores, porro iusto quibusdam illo?
+                                    Soluta aliquid ipsam quisquam quidem dolorem. Laudantium!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="img/slide-4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName-6<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quasi assumenda incidunt
+                                    soluta voluptatibus vero, quia ipsa itaque dolores, porro iusto quibusdam illo?
+                                    Soluta aliquid ipsam quisquam quidem dolorem. Laudantium!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div>
+                                <img src="img/slide-4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName-7<br><span class="review-title">Client</span></h3>
+                            </div>
+                            <div class="para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quasi assumenda incidunt
+                                    soluta voluptatibus vero, quia ipsa itaque dolores, porro iusto quibusdam illo?
+                                    Soluta aliquid ipsam quisquam quidem dolorem. Laudantium!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Ending of Students reviews Section -->
+
+
+
+</body>
+
+</html>
+{% endblock %}

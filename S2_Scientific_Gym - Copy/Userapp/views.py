@@ -28,5 +28,18 @@ def blog(request):
     return render(request, "blog.html", {})
 
 
+def login(request):
+    if(request.method == "GET"):
+        return render(request, "login.html", {})
+    else:
+        pass
+
+
+def membership(request):
+    return render(request, "membership.html", {})
+
+
+def workout(request):
+    return render(request, "workout.html", {})
 
 

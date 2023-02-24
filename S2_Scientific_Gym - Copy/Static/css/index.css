@@ -18,7 +18,8 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 4px 4px 8px rgba(73, 73, 73, 0.4);
-    position: fixed;
+    /* position:fixed; */
+    position:relative;
     z-index: 9999;
 }
 
