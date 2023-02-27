@@ -1,0 +1,53 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2 Gym-Workout Category</title>
+    <link rel="stylesheet" href="{% static 'css/weight_lifting.css' %}" type="text/css">
+
+</head>
+<body>
+
+   
+    <!-- Workout Home Section -->
+    <section class="workout-home">
+        <h1>Transform your life for better</h1>
+        <p>If you want something you’ve bever hard, you must be willing to do something you’ve never done.</p>
+        <a href="#" class="start-btn">START</a>
+    </section>
+
+
+
+
+
+    <!-- Workout Categories Section -->
+
+    <section class="workout-category">
+        <div class="category-container">
+            {% for subcategory in subcat %}
+            <div class="category-content">
+                <img src="{{subcategory.Image.url}}" alt="">
+                <h1>{{subcategory.Lifting_Name}}</h1>
+                <p>{{subcategory.Description}}</p>
+                <a href="#" id="read-more-btn">Read More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+
+
+
+
+
+
+</body>
+</html>
+
+{% endblock %}

@@ -13,7 +13,7 @@
 .workout-home {
     width: 100%;
     height: 100vh;
-    background-image: url('img/slide-4.jpg');
+    background-image: url("/static/images/slide-4.jpg");
     background-size: cover;
     background-position: center;
     /* position: fixed; */

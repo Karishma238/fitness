@@ -24,21 +24,26 @@
 
         <ul class="list">
             <li><a href="/">Home</a></li>
-            <li><a href="#">Membership</a></li>
-            <li><a href="#">Workout</a></li>
-            <li><a href="#">Trainer</a></li>
+            <li><a href="/membership">Membership</a></li>
+            <li><a href="/workout">Workout</a></li>
+            <li><a href="/trainer">Trainer</a></li>
             <li><a href="#">Healthy Lives</a></li>
             <li><a href="#">Payment</a></li>
         </ul>
         <ul class="list">
-            <li>
-                <!-- <i style="color: white; background-color: cadetblue;" class="uil uil-search"></i> -->
-                <input type="text" placeholder="search here">
-                <i class=""></i>
-            </li>
+            
+            {%if "Username" in request.session %}
+            <li><a href="#" class="user"> Welcome {{request.session.Username}}</a></li>
+            {% else %}
             <li><a href="/login" class="login">Login</a></li>
+            {% endif %}
         </ul>
     </nav>
+
+
+
+
+
 
   {% block content %}
 
@@ -260,7 +265,6 @@
 
 
 
-
     <section class="review">
         <h1 class="review-heading">Reviews</h1>
 
@@ -280,8 +284,9 @@
                                 <h3>Arya Lanjewar<br><span class="review-title">Client</span></h3>
                             </div>
                             <div class="para">
-                                <p> I have my gratitude to them for making me bulky from a skinny girl! trainers are good, loved the way they advised us and showed us the right movement or how to concentrate while doing our sets. 
-                                    I learned a lot from this gym and the workouts were really fun with friends there."</p>
+                                <p><i class='fas fa-quote-left'"></i> I have my gratitude to them for making me bulky from a skinny girl! trainers are good, loved the way they advised us and showed us the right movement or how to concentrate while doing our sets. 
+                                    I learned a lot from this gym and the workouts were really fun with friends there.
+                                    <i class='fas fa-quote-right'></i></p>
                             </div>
                         </div>
                     </div>
@@ -295,9 +300,10 @@
                                 <h3>Sachin Sontakke<br><span class="review-title">Client</span></h3>
                             </div>
                             <div class="para">
-                                <p>S2 Scientific Fitness is not a gym but a family. we not only workout but also make bond of togetherness.
+                                <p><i class='fas fa-quote-left'"></i> S2 Scientific Fitness is not a gym but a family. we not only workout but also make bond of togetherness.
                                     It also gives many more features other than exercises. 
-                                    I am happy to be a part of S2 Scientific Fitness and will always be there.</p>
+                                    I am happy to be a part of S2 Scientific Fitness and will always be there.
+                                    <i class='fas fa-quote-right'></i></p>
                             </div>
                         </div>
                     </div>
@@ -311,9 +317,10 @@
                                 <h3>Yashn Yelpande<br><span class="review-title">Client</span></h3>
                             </div>
                             <div class="para">
-                                <p>Very neatly maintained gym. Great place to workout with flexible timings.
+                                <p><i class='fas fa-quote-left'"></i> Very neatly maintained gym. Great place to workout with flexible timings.
                                     Had excellent equipment. Trainers are very easy-going, good at communicating, and keeps you motivated.
-                                    I’ve been going for a little bit and am already seeing a big change in my energy levels and body.</p>
+                                    I’ve been going for a little bit and am already seeing a big change in my energy levels and body.
+                                    <i class='fas fa-quote-right'></i></p>
                             </div>
                         </div>
                     </div>
@@ -327,11 +334,11 @@
                                 <h3>Rizik Mohammad<br><span class="review-title">Client</span></h3>
                             </div>
                             <div class="para">
-                                <p>It’s been a month here and we are really enjoying. 
+                                <p><i class='fas fa-quote-left'"></i> It’s been a month here and we are really enjoying. 
                                     The staff and trainers are very warm and welcoming people. 
                                     We have interacted with most of the trainers and know that they are all very knowledgeable in fitness.
                                     We are looking forward to getting fitter and healthier. 
-                                    Thanks</p>
+                                    Thanks<i class='fas fa-quote-right'></i></p>
                             </div>
                         </div>
                     </div>
@@ -344,9 +351,9 @@
                                 <h3>Atik Mohammad<br><span class="review-title">Client</span></h3>
                             </div>
                             <div class="para">
-                                <p>After a hard day's work, spending an hour in the gym at the S2 Scientific Fitness in Nagpur is a joy.
+                                <p><i class='fas fa-quote-left'"></i> After a hard day's work, spending an hour in the gym at the S2 Scientific Fitness in Nagpur is a joy.
                                     The very professional coach, always smiling and courteous, instills a feeling of relaxation and harmony that are the right notes to feel at ease.
-                                    Overall highly recommended.</p>
+                                    Overall highly recommended.<i class='fas fa-quote-right'></i></p>
                             </div>
                         </div>
                     </div>
@@ -357,12 +364,12 @@
                                 <img src="{% static 'images/aniket.jpg' %}" alt="">
                             </div>
                             <div>
-                                <h3>Aniket Chaliye<br><span class="review-title"> Client </span></h3>
+                                <h3>Aniket Chaliye<br><span class="review-title">Client</span></h3>
                             </div>
                             <div class="para">
-                                <p>This is a fantastic gym!! All the trainers are super nice and take an interest in you no matter what fitness level you’re at. 
+                                <p><i class='fas fa-quote-left'"></i> This is a fantastic gym!! All the trainers are super nice and take an interest in you no matter what fitness level you’re at. 
                                     I really like how they give me tips and tricks to get the most out of every workout.  
-                                    It's great!</p>
+                                    It’s great! <i class='fas fa-quote-right'></i></p>
                             </div>
                         </div>
                     </div>
@@ -370,15 +377,16 @@
                     <div class="swiper-slide">
                         <div class="review-card">
                             <div>
-                                <img src="{% static 'images/abhay.jpg' %}" alt="">
+                                <img src="{% static 'images/savi.jfif' %}" alt="">
                             </div>
                             <div>
-                                <h3>Abhay Deshmukh<br><span class="review-title">Client</span></h3>
+                                <h3>Savi Karlewar<br><span class="review-title">Client</span></h3>
                             </div>
                             <div class="para">
-                                <p>If you are fitness fan, then you have to visit this place. Actually this place is very hygienic, cool. 
+                                <p><i class='fas fa-quote-left'"></i> If you are fitness fan, then you have to visit this place. Actually this place is very hygienic, cool. 
                                     There are many updated equipments for workout.
                                     Pleasant ambience, well trained staff and world class equipments makes this gym perfect place for work out.
+                                    <i class='fas fa-quote-right'></i>
                                 </p>
                             </div>
                         </div>
@@ -395,6 +403,7 @@
 
 
     </section>
+    
   {% endblock %}
 
 
@@ -422,11 +431,11 @@
                 <div class="footer-column">
                     <h4 class="footer-heading">Quick Link</h4>
                     <ul>
-                        <li><a href="#">Membership</a></li>
-                        <li><a href="#">Workout</a></li>
-                        <li><a href="#">Trainer</a></li>
+                        <li><a href="/membership">Membership</a></li>
+                        <li><a href="/workout">Workout</a></li>
+                        <li><a href="trainer">Trainer</a></li>
                         <li><a href="#">Healthy Lives</a></li>
-                        <li><a href="#">Blogs</a></li>
+                        <li><a href="blog">Blogs</a></li>
                     </ul>
                 </div>
 
