@@ -12,7 +12,7 @@ class SignupInfoAdmin(admin.ModelAdmin):
 
 
 class WorkoutSubcategoryAdmin(admin.ModelAdmin):
-    list_display = ('Image', 'Lifting_Name', 'Description', 'Category')
+    list_display = ('Lifting_Name', 'Image', 'Description', 'Category')
 
 
 class WorkoutCategoryAdmin(admin.ModelAdmin):

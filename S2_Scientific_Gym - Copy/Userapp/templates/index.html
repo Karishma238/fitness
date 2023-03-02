@@ -27,13 +27,15 @@
             <li><a href="/membership">Membership</a></li>
             <li><a href="/workout">Workout</a></li>
             <li><a href="/trainer">Trainer</a></li>
-            <li><a href="#">Healthy Lives</a></li>
+            <li><a href="/HealthyLives">Healthy Lives</a></li>
             <li><a href="#">Payment</a></li>
+            <li><a href="/admin">Admin</a></li>
         </ul>
         <ul class="list">
             
             {%if "Username" in request.session %}
             <li><a href="#" class="user"> Welcome {{request.session.Username}}</a></li>
+            <li><a href="/logout" class="login">Logout</a></li>
             {% else %}
             <li><a href="/login" class="login">Login</a></li>
             {% endif %}
@@ -413,13 +415,14 @@
     <!-- Starting of Footer Section -->
 
     <footer class="footer">
+        <!---
         <h1 class="footer-head">Get Offer Updates</h1>
         <div class="footer-subscribe">
             <form action="">
                 <input type="text" placeholder="example@gmail.com">
                 <input type="submit" value="Subscribe">
             </form>
-        </div>
+        </div>-->
 
         <div class="footer-container">
             <div class="footer-row">

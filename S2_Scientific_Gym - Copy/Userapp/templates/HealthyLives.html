@@ -1,0 +1,257 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2 Gym-Healthy Lives</title>
+    <link rel="stylesheet" href="{% static 'css/HealthyLives.css' %}">
+
+    <script src="https://kit.fontawesome.com/50f95dd8c3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <section class="workout-home">
+        <h1>Transform your life for better</h1>
+        <p>If you want something you’ve bever hard, you must be willing to do something you’ve never done.</p>
+        <a href="#" class="start-btn">START</a>
+    </section>
+
+
+
+
+
+    <section class="healthy-lives-food">
+        <h1 class="food-heading">Foods To Add To Your Gym Diet Plan</h1>
+        <p class="food-para">
+            Carbohydrates, proteins, and fats are the three macronutrients that play a critical role in maintaining
+            bodily functions and even promoting changes in stength and composition, and it is critical that we consume
+            all three macronutients in adequate quantities to optimise progress accordingly. Lets look at the essestial
+            nutrients you should include in your gym diet plan for muscle growth and weight loss.
+        </p>
+
+    </section>
+
+
+
+
+
+
+    <!-- Carbohydrates Section  -->
+    <section class="macronutients carbs">
+
+        <div class="macronutients-container">
+            <div class="left-macronutients-container">
+                <img src="{% static 'images/Carbs.webp' %}">
+            </div>
+            <div class="right-macronutients-container">
+                <h1>Carbohydrates</h1>
+                <p>First off, because they are the body's main source of energy, carbs have a major impact on how activity is fueled. Carbohydrates come in two different varienties: complicated and simple. The
+                names indicate how long it takes to digest complex combohydrates, which do so more slowly than simple carbohydrates.</p> <br>
+
+                <p>Moreover, complex carbs are very nutrients and give the body a sustained, slow-release of energy. Simple carbs have minimal nutritional value, even though they give the body quick-acting,
+                short-tern energy.</p>
+                <br>
+                <p>In order to maintain a balanced gym diet plan, you should eat complex carbs like whole grains, beans
+                    nuts, fruits and vegetables.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Protein Section  -->
+    <section class="macronutients protein">
+        <div class="macronutients-container protein">
+            <div class="left-macronutients-container">
+                <img src="{% static 'images/protein.jpg' %}" alt="">
+            </div>
+            <div class="right-macronutients-container">
+                <h1>Protein</h1>
+                <p>Particularly, the majority of gym visitors will be fully aware of the siginificance of taking protein. Similarly, protein is crutial of recovery and repair, which is why it is so necessary. A
+                nutrition plan for the gym must include protein. The muscles suffer tiny injury as a result of this. Protein is therefore required to repair the damage. Without it, recuperation times will be longer and it can cause
+                persistent weariness.</p>
+                <br>
+                <p>Lean means, eggs, and dairy products are among the animal products that have the most protein Similar to that, it's also present, but in smaller amounts, in foods like seeds, nuts, legumes, beans, and soy.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- fat Section  -->
+    <section class="macronutients">
+
+        <div class="macronutients-container">
+            <div class="left-macronutients-container">
+                <img src="{% static 'images/fats.jpeg' %}" alt="">
+            </div>
+            <div class="right-macronutients-container">
+                <h1>Fats</h1>
+                <p>Frequently, fats are wrongly assumed to be the main contributor to weight gain. Although they are
+                crucial to the absorption and transportation of nutrients, fats are not the cause of this. In addition, they may benefit the production of hormones and the health of the heart.</p>
+                <br>
+                <p>While some types of fats are more advantageous than others in gym diet regimens,  all types of fats can have a favorable impact of health. New research hav revealed that saturated fats are not as bad as previosly thought; instead, you should concentrate on unsaturated fats, Avocados, seeds, nuts, peanuts butter,fist(salmon, tuna, and mackerel), oils (olive, peanut), and soy products are a few examples of unsaturated fat foods that you can include inyour gym diet plan.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="seven-day-diet">
+
+        <div class="img-content">
+            <img src="{% static 'images/diet.jpg' %}" alt="">
+        </div>
+
+        <h1>Ideal 7 Day Gym Diet Chart Plan</h1>
+        <p>Although calories and macronutrients are crutial, the best diet for the gym must also have a positive impact on health. All three macronutients are consumed in this diet, which is high in vitamins and minerals, and nutrients-poor foods and avoided.</p>
+
+    </section>
+
+
+    <!-- Diet Plan Section -->
+    <section class="diet-plan">
+
+        <h3>Let's find you a 7-day diet plan for the gym in the meantime:</h3>
+
+
+        <table>
+            <tr>
+                <th>Days</th>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+                <th>Pre-Workout Snack</th>
+                <th>Dinner(Post-Workout)</th>
+            </tr>
+
+            <tr>
+                <td>Day-1</td>
+                <td>Oats Banana Pancakes with Protein Shake</td>
+                <td>Multigrain roti along with palak chicken and Avocado bell pepper salad</td>
+                <td>Bananas</td>
+                <td>Brown rice, peas panner curry,sprouts vegetable salad</td>
+            </tr>
+
+            <tr>
+                <td>Day-2</td>
+                <td>Oatmeal with Greek Yogurt & Seasonal fruits Mango Juice</td>
+                <td>Multigrain roti, fish curry, vegetable salad</td>
+                <td>Toast and Jam</td>
+                <td>Broken wheat khichidi along with carrot raita, egg white, and vegetable salad</td>
+            </tr>
+
+            <tr>
+                <td>Day-3</td>
+                <td>Poached Eggs Whole Grain Toast Protein Shake</td>
+                <td>Quinoa upma, chicken and broccoli salad</td>
+                <td>Mixed Nuts & Diet Fruits</td>
+                <td>Lean Beef and vegetable curry, brown rice, cucumber raita Baby Potatoes Chocolate Milk</td>
+            </tr>
+
+            <tr>
+                <td>Day-4</td>
+                <td>Oatmeal with Honey Apple Juice</td>
+                <td>Grilled Chicken Salad Whole Grain Bread</td>
+                <td>Toast with Peanut Butter</td>
+                <td>Methi Chicken Brown Rice Broccoli Protein Shake</td>
+
+            </tr>
+
+            <tr>
+                <td>Day-5</td>
+                <td>Scrambled Eggs Whole Grain Toast Smoothie</td>
+                <td>Grilled chicken vegetable roti rolls Green salad</td>
+                <td>Mixed Nuts & Dried Fruits</td>
+                <td>Chicken Stir Fry Spring Onion, Peppers & Broccoli Chocolate Milk</td>
+            </tr>
+
+
+            <tr>
+                <td>Day-6</td>
+                <td>Oatmeal Whole Grain Toast Orange Juice </td>
+                <td>Whole Grain Chicken Wrap Black Beans, Peppers & Greak Yougurt</td>
+                <td>Apple with peanut butter</td>
+                <td>keema bhurji and multigrain rotilean Beef MinceSweet PotatoProtein Shake</td>
+            </tr>
+
+
+            <tr>
+                <td>Day-7</td>
+                <td>Oatmeal with NutsSmoothie </td>
+                <td>Whole Wheat pasta with chicken and green salad</td>
+                <td>Granola or Cereal</td>
+                <td>Fish curry, boiled green peas salad brown rice Garden Peas Milk</td>
+            </tr>
+
+
+        </table>
+    </section>
+
+
+
+
+    <section class="nutrition">
+        <h1 class="nutrition-heading">
+            Do's and Don't in Nutrition
+        </h1>
+        <p>This section will highlight a number of do's and don'ts to keep you on track with your nutrition for the best results from your gym diet plan.
+        </p>
+
+
+        <h2 class="do">
+            Do's :
+        </h2>
+        <ul class="list">
+            <li>Consume the three macronutrients.</li>
+            <li>Make sure you consume a variety of fruits and vegetables to ensure that you are getting enough vitamins and minerals.</li>
+            <li>Choose complex carbs over simple carbs in perticular.</li>
+            <li>Make sure you consume protein consistently throughout the day.</li>
+            <li>Consume more unsaturated fats than trans fat and saturated fats.</li>
+            <li>Limit your intake of food that will harm your health and your progress at the gym.</li>
+            <li>Maintain appropriate hydration levels.</li>
+        </ul>
+
+
+        <h2 class="do">
+            Don't :
+        </h2>
+        <ul class="list">
+            <li>As each macronutients has a specific function, you should eliminate one from your diet.</li>
+            <li>Skip meals, particularly before or after a workout.</li>
+            <li>Consume "heavy" complex carbs too soon before starting a workout.</li>
+            <li>Excessive reliance on simple carbohydrates as a source of energy.</li>
+            <li>Make poor dietary decision in order to gain calories.</li>
+        </ul>
+    </section>
+
+
+
+
+</body>
+
+</html>
+
+{% endblock %}

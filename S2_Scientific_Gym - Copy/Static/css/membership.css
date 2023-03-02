@@ -9,6 +9,8 @@
     text-decoration: none;
 }
 
+
+
 /* Workout Home Page */
 .workout-home {
     width: 100%;
@@ -48,31 +50,278 @@
 
 
 
+
+
+/* Plans and Offers Section  */
+
+.plan {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px auto;
+    padding: 10px clamp(20px, 10vw, 100px) 100px clamp(20px, 10vw, 100px);
+    background-color: #161b21;
+    /* border: 2px solid darkmagenta; */
+
+}
+
+.plan .plan-heading {
+    text-align: center;
+    font-size: 36px;
+    color: whitesmoke;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.plan-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    /* border: 2px solid #F05F28; */
+}
+
+.plan-content {
+    width: 300px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 0px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.4);
+}
+
+/* special plan  */
+
+.plan-container .special-plan {
+    /* width: 400px; */
+    transform: scale(1.3);
+}
+
+.plan-content h1 {
+    margin: 20px 0px;
+}
+
+.plan-content .price {
+    color: #F05F28;
+    font-size: 28px;
+    /* padding: 0px 20px; */
+    /* margin: 20px; */
+
+}
+
+.plan-content .free {
+    color: #000;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.plan-content ul li {
+    text-align: center;
+    padding: 0px 6px;
+    color: black;
+    line-height: 1.4;
+    /* list-style-image: url('img/correct.png'); */
+}
+
+.plan-content a {
+    padding: 5px 30px;
+    color: white;
+    background-color: #F05F28;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+/* What we do Section */
+
+.what-we-do {
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0px auto;
+    padding: 10px clamp(20px, 10vw, 100px) 100px clamp(20px, 10vw, 100px);
+    /* background-color: #161b21; */
+    border: 2px solid darkmagenta;
+
+}
+
+
+.what-we-do .sub-heading {
+    color: #F05F28;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.what-we-do .main-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.what-we-do-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.what-we-do-content {
+    width: 285px;
+    /* border: 2px solid #F05F28; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 5px; */
+}
+
+.what-we-do-container .orange{
+    background-color: #F05F28;
+    transition: all 0.5s ease;
+}
+.what-we-do-container .orange:hover{
+    background-color: #000;
+}
+
+.what-we-do-container .black{
+    background-color: #000;
+    transition: all 0.5s ease;
+}
+.what-we-do-container .black:hover{
+    background-color: #F05F28;
+}
+
+.what-we-do-content #img-data{
+    width: 285px;
+    height: 347px;
+    object-fit: cover;
+    padding: 0px;
+    transition: all 0.5s ease;
+}
+.what-we-do-content #img-data:hover{
+    opacity: 0.6;
+}
+
+.what-we-do-content h1{
+    padding: 5px;
+    color: white;
+}
+.what-we-do-content p{
+    text-align: center;
+    margin: 15px 0px;
+    padding: 5px;
+    color: white;
+}
+
+.what-we-do-content a {
+    margin: 10px 30px;
+    border: 1px solid #fff;
+    padding: 5px 15px 5px 20px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.what-we-do-content a:hover {
+    background-color: #F05F28;
+    color: whitesmoke;
+}
+
+.what-we-do-content i {
+    margin: 0 0px 0 20px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Very small Devices */
 @media screen and (max-width: 400px) {}
 
 /* Android Smartphones */
-@media screen and (max-width: 480px) {
-
-}
+@media screen and (max-width: 480px) {}
 
 /* Large Android Smartphones */
 @media screen and (max-width: 767px) {
-    .social-media{
+    .social-media {
         display: none;
     }
+
     label {
         display: block;
     }
-    
+
+    .navbar .list {
+        display: block;
+        position: fixed;
+        top: 80px;
+        /* top: -100%; */
+        /* left: -100%; */
+        right: -100%;
+        background-color: #333;
+        width: 100%;
+        height: 100vh;
+        /* border-radius: 0%; */
+        text-align: center;
+        /* padding: 20px ; */
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar li {
+        padding: 20px 0px;
+    }
+
     #check:checked~.list {
         /* left: 0px; */
         right: 0px;
         top: 80px;
         border-radius: 0%;
     }
-    
-    
+
+    .plan-container {
+        flex-direction: column;
+        height: auto;
+        margin: 0px;
+    }
+
+    .plan-content {
+        margin: 20px;
+    }
+
+    .plan-container .special-plan {
+        /* width: 400px; */
+        transform: scale(1);
+    }
+
+
 }
 
 
@@ -85,5 +334,3 @@
     .navbar .list .login {
         display: none;
     }
-    
-}

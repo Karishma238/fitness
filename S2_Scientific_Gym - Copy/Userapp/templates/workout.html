@@ -25,6 +25,22 @@
 
     <section class="workout-types">
         <div class="workout-types-container">
+
+            <div class="workout-types-content">
+                <img id="img-data" src="{% static 'images/Weight-lifting.jpg' %}" alt="">
+                <div class="text-wrapper">
+                    <img id="workout-icon" src="{% static 'images/man-lifting-weight.png' %}" alt="">
+                    <h1>Weight Lifting</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium consequuntur eos fuga atque
+                    necessitatibus nihil. Debitis vero vel dolorum quia quibusdam maxime voluptates autem praesentium
+                    incidunt, quod quasi iusto in.</p>
+
+                <a href="/WorkoutSubcategory">More
+                    <i class="fas fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
             {% for category in catg%}
             <div class="workout-types-content">
                 <img id="img-data" src="{{category.Cat_Image.url}}" alt="">

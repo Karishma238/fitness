@@ -47,6 +47,11 @@ def login(request):
             return redirect(index)
 
 
+def Signout(request):
+    request.session.clear()
+    return redirect(index)
+
+
 def Signup(request):
     uname = request.POST['uname']
     email = request.POST['email']
@@ -78,8 +83,7 @@ def workout(request):
     return render(request, "workout.html", {"catg":catg})
 
 
-def Subcategory(request, did):
-    cid = WorkoutCategory.objects.get(id=did)
+def Subcategory(request):
     subcat = WorkoutSubcategory.objects.filter(Category=cid)
     print("hello")
     return render(request, "WorkoutSubcategory.html", {"subcat":subcat})
@@ -91,3 +95,6 @@ def trainer(request):
 
 def TrainerProfile(request):
     return render(request, "TrainerProfile.html", {})
+
+def HealthyLives(request):
+    return render(request, "HealthyLives.html", {})
