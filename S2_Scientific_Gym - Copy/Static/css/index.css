@@ -9,6 +9,9 @@
     text-decoration: none;
 }
 
+
+/* Navigation Bar of Workout Page */
+
 .navbar {
     width: 100%;
     height: 80px;
@@ -18,12 +21,11 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 4px 4px 8px rgba(73, 73, 73, 0.4);
-    /*position: fixed;*/
-    position:relative;
+    position: fixed;
     z-index: 9999;
 }
 
-.navbar .logo img{
+.navbar .logo img {
     /* color: whitesmoke;
     font-size: 28px;
     font-weight: 600; */
@@ -48,17 +50,12 @@
     padding: 0px 10px;
 }
 
-.navbar .list .login {
-    padding: 2px 10px;
+.navbar .login {
+    padding: 4px 15px;
     color: #000;
     background-color: #F05F28;
     border-radius: 5px;
-}
-
-.navbar .list .user {
-    padding: 2px 10px;
-    color: #F05F28;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #check,
@@ -68,6 +65,8 @@ label {
     padding: 0px 0px;
     color: whitesmoke;
 }
+
+
 
 
 
@@ -86,7 +85,7 @@ label {
     height: 100%;
     /* border: 2px solid black; */
     position: fixed;
-    /* top: 70px; */
+    top: 70px;
 }
 
 .swiper-slide {
@@ -108,10 +107,39 @@ label {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-img {
+    /* width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/home-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+     */
+    /* margin-top: 40px; */
+}
+
+
+
 .achieve {
     width: 100%;
     height: auto;
-    /* margin: 50px auto; */
+    margin: 50px auto;
     border: 5px solid hsl(180, 100%, 27%) 100%, 27%;
     background-color: #161b21;
 }
@@ -308,6 +336,7 @@ label {
 
 
 
+
 .timing {
     width: 100%;
     height: auto;
@@ -397,13 +426,7 @@ label {
 
 
 
-
-.register h1{
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    padding: 20px 0 20px 0;
-}
+/* Register / Enquiry form Section */
 .register {
     width: 85%;
     height: auto;
@@ -412,7 +435,12 @@ label {
     /* background-color: #161b21; */
     /* border: 2px solid darkmagenta; */
 }
-
+.register .register-heading{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+}
 .register-container {
     display: flex;
     align-items: center;
@@ -466,7 +494,7 @@ textarea {
     margin: 0px auto;
     padding: 0px clamp(10px, 10vw, 30px) 100px clamp(10px, 10vw, 30px);
     background-color: #161b21;
-    border: 2px solid darkmagenta;
+    /* border: 2px solid darkmagenta; */
 }
 
 .review h1 {
@@ -474,7 +502,7 @@ textarea {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 
@@ -489,25 +517,29 @@ textarea {
 
 .review-card {
     width: 350px;
-    height: 330px;
+    height: 380px;
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+
     margin: 0 20px;
     padding: 20px;
+    
 }
 
 .review-card img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #F05F28;
 
 }
 
 .review-card h3 {
     position: relative;
-    left: 20px;
+    left: 30px;
     bottom: 55px;
     line-height: 24px;
     font-size: 20px;
@@ -515,7 +547,7 @@ textarea {
 
 .review-card .review-title {
     font-size: 16px;
-    color: #106672;
+    color: #F05F28;
 }
 
 .review-container .review-card .para {
@@ -525,7 +557,7 @@ textarea {
 }
 
 .review p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .fa-quote-left{
@@ -538,10 +570,15 @@ textarea {
     font-size:9px;
 }
 
-.swiper-wrapper {
-    /* padding: 10px 0 50px 0; */
+.review-rating .star{
+    color: gold;
 }
-
+.review-rating .five{
+    color: lightgray;
+}
+.swiper-wrapper {
+    padding: 10px 0 50px 0;
+}
 
 /* Ending of Students reviews Section  */
 
@@ -588,6 +625,9 @@ textarea {
 
 /* Large Android Smartphones */
 @media screen and (max-width: 767px) {
+    .social-media{
+        display: none;
+    }
     label {
         display: block;
     }
@@ -595,8 +635,8 @@ textarea {
     .navbar .list {
         display: block;
         position: fixed;
-        /* top: 80px; */
-        top: -100%;
+        top: 80px;
+        /* top: -100%; */
         /* left: -100%; */
         right: -100%;
         background-color: #333;
@@ -730,13 +770,11 @@ textarea {
 }
 
 .footer input[type=submit] {
-    background-color: #F05F28;
     width: 10%;
     height: 50px;
-    border-radius: 10px;
+    border: none;
     font-size: 16px;
     font-weight: 500;
-    border:none;
 
 }
 
@@ -814,12 +852,13 @@ a:hover {
 }
 
 
-.footer-social-media ul{
+.footer-social-media ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-social-media h3 a{
+
+.footer-social-media h3 a {
     font-size: 20px;
     margin: 0px 20px;
 }

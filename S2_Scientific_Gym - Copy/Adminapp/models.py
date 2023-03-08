@@ -37,14 +37,32 @@ class WorkoutCategory(models.Model):
         db_table = "WorkoutCategory"
 
 
-class WorkoutSubcategory(models.Model):
+class WorkoutExercise(models.Model):
     Image = models.ImageField()
-    Lifting_Name = models.CharField(max_length=50)
+    Exer_Name = models.CharField(max_length=50)
     Description = models.TextField()
     Category = models.ForeignKey(to = 'WorkoutCategory', on_delete = models.CASCADE)
 
     class Meta:
+        db_table = "WorkoutExercise"
+
+
+class WorkoutSubcategory(models.Model):
+    Image = models.ImageField()
+    Lifting_Name = models.CharField(max_length=50)
+    Description = models.TextField()
+
+    class Meta:
         db_table = "WorkoutSubcategory"
+
+
+class Packages(models.Model):
+    Duration = models.CharField(max_length=25)
+    Price = models.IntegerField(default=0)
+    Include = models.TextField()
+
+    class Meta:
+        db_table = "Packages"
 
     
 

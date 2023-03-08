@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from Adminapp.models import Register, SignupInfo, WorkoutCategory, WorkoutSubcategory
+from Adminapp.models import Register, SignupInfo, WorkoutCategory, WorkoutExercise, WorkoutSubcategory, Packages
 from django.contrib import messages
 
 # Create your views here.
@@ -75,18 +75,25 @@ def Signup(request):
 
 
 def membership(request):
-    return render(request, "membership.html", {})
+    pack = Packages.objects.all()
+    return render(request, "membership.html", {"pack":pack})
 
 
 def workout(request):
     catg = WorkoutCategory.objects.all()
-    return render(request, "workout.html", {"catg":catg})
+    pack = Packages.objects.all()
+    return render(request, "workout.html", {"catg":catg, "pack":pack})
 
 
 def Subcategory(request):
-    subcat = WorkoutSubcategory.objects.filter(Category=cid)
-    print("hello")
+    subcat = WorkoutSubcategory.objects.all()
     return render(request, "WorkoutSubcategory.html", {"subcat":subcat})
+
+
+def Exercise(request, did):
+    cat = WorkoutCategory.objects.get(id=did)
+    exer = WorkoutExercise.objects.filter(Category=cat)
+    return render(request, "WorkoutExercise.html", {"exer":exer})
 
 
 def trainer(request):

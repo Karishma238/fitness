@@ -13,6 +13,7 @@ urlpatterns = [
     path('membership', views.membership),
     path('workout',views.workout),
     path('WorkoutSubcategory', views.Subcategory),
+    path('WorkoutExercise/<did>', views.Exercise),
     path('trainer', views.trainer),
     path('TrainerProfile', views.TrainerProfile),
     path('HealthyLives', views.HealthyLives),

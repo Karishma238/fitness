@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S2 Gym - Membership</title>
-    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="{% static 'css/membership.css' %}">
 
     <script src="https://kit.fontawesome.com/50f95dd8c3.js" crossorigin="anonymous"></script>
 
@@ -37,59 +37,37 @@
         <h1 class="plan-heading">Our Pricing and Plan<br> 40% dicount</h1>
 
         <div class="plan-container">
-            <div class="plan-content">
-                <h1>3 Months</h1>
-                <h4 class="price">Rs. 2799/-
-                </h4>
-                <span class="free">Single Class</span>
-
-                <ul>
-                    <li>Cardio Vascular Area</li>
-                    <li>Curve Treadmill</li>
-                    <li>Air Bike Cycle</li>
-                    <li>Trampoline</li>
-                    <li>Stair Mill</li>
-                    <li>Cross Fit</li>
-                    <li>Machine and Free Weight Area</li>
-                </ul>
-                <a href="#">Buy Now</a>
-            </div>
+            {% for pac in pack %}
+            {% if pac.id == 2 %}
 
             <div class="plan-content special-plan">
-                <h1>12 Months</h1>
-                <h4 class="price">Rs. 6999/-
+                <h1>{{pac.Duration}}</h1>
+                <h4 class="price">Rs. {{pac.Price}}/-
                 </h4>
                 <span class="free">Single Class</span>
 
                 <ul>
-                    <li>Cardio Vascular Area</li>
-                    <li>Curve Treadmill</li>
-                    <li>Air Bike Cycle</li>
-                    <li>Trampoline</li>
-                    <li>Stair Mill</li>
-                    <li>Cross Fit</li>
-                    <li>Machine and Free Weight Area</li>
+                    <li>{{pac.Include|linebreaks}}</li>
                 </ul>
                 <a href="#">Buy Now</a>
             </div>
+
+            {% else %}
 
             <div class="plan-content">
-                <h1>6 Months</h1>
-                <h4 class="price">Rs. 5099/-
+                <h1>{{pac.Duration}}</h1>
+                <h4 class="price">Rs. {{pac.Price}}/-
                 </h4>
                 <span class="free">Single Class</span>
 
                 <ul>
-                    <li>Cardio Vascular Area</li>
-                    <li>Curve Treadmill</li>
-                    <li>Air Bike Cycle</li>
-                    <li>Trampoline</li>
-                    <li>Stair Mill</li>
-                    <li>Cross Fit</li>
-                    <li>Machine and Free Weight Area</li>
+                    <li>{{pac.Include|linebreaks}}</li>   
                 </ul>
                 <a href="#">Buy Now</a>
             </div>
+            {% endif %}
+            {% endfor %}
+
         </div>
     </section>
 
@@ -109,51 +87,51 @@
                 <h1 class="content-head">Weight Lifting</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, debitis dignissimos. Expedita, laboriosam odio, beatae in error enim saepe vitae quia totam soluta nam suscipit, illo eius consequuntur obcaecati dignissimos!</p>
 
-                <a href="#">More
+                <a href="/workout">More
                     <i class="fas fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
             <div class="what-we-do-content">
                 
-                <img id="img-data" src="img/slide-4.jpg" alt="">
+                <img id="img-data" src="{% static 'images/slide-4.jpg' %}" alt="">
             </div>
 
             <div class="what-we-do-content black">
                 <h1 class="content-head">Cardio & Strength</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, debitis dignissimos. Expedita, laboriosam odio, beatae in error enim saepe vitae quia totam soluta nam suscipit, illo eius consequuntur obcaecati dignissimos!</p>
 
-                <a href="#">More
+                <a href="/workout">More
                     <i class="fas fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
             <div class="what-we-do-content">
-                <img id="img-data" src="img/home-6.jpg" alt="">
+                <img id="img-data" src="{% static 'images/home-6.jpg' %}" alt="">
             </div>
 
             <div class="what-we-do-content">
-                <img id="img-data" src="img/home-7.jpg" alt="">
+                <img id="img-data" src="{% static 'images/home-7.jpg' %}" alt="">
             </div>
 
             <div class="what-we-do-content black">
                 <h1 class="content-head">CrossFit</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, debitis dignissimos. Expedita, laboriosam odio, beatae in error enim saepe vitae quia totam soluta nam suscipit, illo eius consequuntur obcaecati dignissimos!</p>
 
-                <a href="#">More
+                <a href="/workout">More
                     <i class="fas fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
             <div class="what-we-do-content">
-                <img id="img-data" src="img/home-5.jpg" alt="">
+                <img id="img-data" src="{% static 'images/home-5.jpg' %}" alt="">
             </div>
 
             <div class="what-we-do-content orange">
                 <h1 class="content-head">Boxing</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, debitis dignissimos. Expedita, laboriosam odio, beatae in error enim saepe vitae quia totam soluta nam suscipit, illo eius consequuntur obcaecati dignissimos!</p>
 
-                <a href="#">More
+                <a href="/workout">More
                     <i class="fas fa-solid fa-arrow-right"></i>
                 </a>
             </div>
