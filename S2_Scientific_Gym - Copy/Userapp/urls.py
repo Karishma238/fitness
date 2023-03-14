@@ -13,8 +13,10 @@ urlpatterns = [
     path('membership', views.membership),
     path('workout',views.workout),
     path('WorkoutSubcategory', views.Subcategory),
-    path('WorkoutExercise/<did>', views.Exercise),
+    path('SubcategoryExercise/<sid>', views.ExerciseSub),
+    path('CategoryExercise/<cid>', views.ExerciseCat),
     path('trainer', views.trainer),
-    path('TrainerProfile', views.TrainerProfile),
+    path('TrainerProfile/<tid>', views.TrainerProfile),
     path('HealthyLives', views.HealthyLives),
+    path('Pay', views.Pay),
 ]

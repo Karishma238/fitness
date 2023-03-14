@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Navigation Bar of Workout Page */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    padding: 0px clamp(20px, 10vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(73, 73, 73, 0.4);
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar .logo img {
+    /* color: whitesmoke;
+    font-size: 28px;
+    font-weight: 600; */
+    width: 100px;
+}
+
+.navbar .list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar li a {
+    color: whitesmoke;
+}
+
+.navbar .list input {
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    background-color: #000;
+    padding: 0px 10px;
+}
+
+.navbar .login {
+    padding: 4px 15px;
+    color: #000;
+    background-color: #F05F28;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+#check,
+label {
+    display: none;
+    font-size: 24px;
+    padding: 0px 0px;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+/* Workout Home Page */
+.workout-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/static/images/treadmill-b.jpg");
+    background-size: cover;
+    background-position: top center;
+    /* position: fixed; */
+    top: 80px;
+    padding: clamp(10px, 10vw, 100px) clamp(20px, 10vw, 100px) 10px clamp(20px, 10vw, 100px);
+
+}
+
+.workout-home h1 {
+    color: whitesmoke;
+    font-size: 42px;
+    margin: 100px 0px 0px 0px;
+}
+
+.workout-home p {
+    width: 450px;
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    margin: 20px 0 40px 0;
+}
+
+.workout-home .start-btn {
+    background-color: #F05F28;
+    padding: 10px 30px;
+    color: white;
+    /* margin: 30px 0px; */
+    border-radius: 4px;
+    display: inline-block;
+}
+
+
+
+
+
+
+/* Treadmill Section */
+
+.treadmill {
+
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding: 10px clamp(10px, 5vw, 100px) 100px clamp(20px, 5vw, 200px);
+    /* background-color: #161b21; */
+    /* border: 4px solid #F05F28; */
+
+}
+.treadmill-container{
+    width: 100%;
+    padding: 50px 100px 0px 100px;
+}
+.treadmill-container .treadmill-img-data{
+    width: 90%;
+    margin: 10px auto;
+    /* border: 5px solid orangered; */
+}
+.treadmill-container img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+.treadmill-container h1, p{
+    width: 90%;
+    margin: 10px auto;
+    text-align: justify;
+    /* border: 2px solid; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Very small Devices */
+@media screen and (max-width: 400px) {}
+
+/* Android Smartphones */
+@media screen and (max-width: 480px) {}
+
+/* Large Android Smartphones */
+@media screen and (max-width: 767px) {
+    .social-media {
+        display: none;
+    }
+
+    label {
+        display: block;
+    }
+
+    .navbar .list {
+        display: block;
+        position: fixed;
+        top: 80px;
+        /* top: -100%; */
+        /* left: -100%; */
+        right: -100%;
+        background-color: #333;
+        width: 100%;
+        height: 100vh;
+        /* border-radius: 0%; */
+        text-align: center;
+        /* padding: 20px ; */
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar li {
+        padding: 20px 0px;
+    }
+
+    #check:checked~.list {
+        /* left: 0px; */
+        right: 0px;
+        top: 80px;
+        border-radius: 0%;
+    }
+    .workout-home p{
+        width: 350px;
+    }
+    .treadmill-container{
+        padding: 0px 0px 0px 0px;
+    }
+
+    
+
+}
+
+
+/*  Tablets*/
+@media screen and (max-width: 1000px) {
+    .navbar .list input {
+        display: none;
+    }
+
+    .navbar .list .login {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Starting of Footer Section  */
+
+.footer {
+    background-color: #000;
+    padding: 10px 50px;
+}
+
+.footer .footer-head {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.footer form {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    margin: 20px 0px;
+}
+
+.footer input[type=text] {
+    width: 40%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0px 10px;
+}
+
+.footer input[type=submit] {
+    width: 10%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+.footer-container {
+    max-width: 1170px;
+    background-color: #000;
+    margin: auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column {
+    width: 17%;
+    padding: 0 15px;
+}
+
+.footer-contact-column {
+    width: 32%;
+    padding: 0 15px;
+}
+
+.footer-column,
+.footer-contact-column,
+.footer-heading {
+    font-size: 14px;
+    color: whitesmoke;
+    /* text-transform: capitalize; */
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer .footer-heading {
+    font-size: 20px;
+}
+
+/* .foote-column,
+.footer-contact-column ul li:not(:last-child) {
+    margin-bottom: 10px;
+} */
+
+.footer-column,
+.footer-contact-column,
+ul,
+li,
+a,
+.footer-icons {
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(180, 180, 180);
+    /* display: block; */
+    transition: all 0.3s ease;
+}
+
+.footer i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-column,
+.footer-contact-column ul,
+li,
+a:hover {
+    color: #fff;
+}
+
+
+.footer-social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.footer-social-media h3 a {
+    font-size: 20px;
+    margin: 0px 20px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+@media(max-width: 767px) {
+
+    .footer-column,
+    .footer-contact-column {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer input[type=text] {
+        width: 70%;
+    }
+
+    .footer input[type=submit] {
+        width: 30%;
+    }
+}
+
+@media(max-width: 574px) {
+
+    .footer-column,
+    .footer-contact-column {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Ending of Footer Section  */

@@ -33,9 +33,9 @@
             {% for subcategory in subcat %}
             <div class="category-content">
                 <img src="{{subcategory.Image.url}}" alt="">
-                <h1>{{subcategory.Lifting_Name}}</h1>
+                <h1>{{subcategory.Sub_Name}}</h1>
                 <p>{{subcategory.Description}}</p>
-                <a href="#" id="read-more-btn">Read More</a>
+                <a href="/SubcategoryExercise/{{subcategory.id}}" id="read-more-btn">Read More</a>
             </div>
             {% endfor %}
         </div>

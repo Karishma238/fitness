@@ -37,20 +37,43 @@ class WorkoutCategory(models.Model):
         db_table = "WorkoutCategory"
 
 
-class WorkoutExercise(models.Model):
+class SubExercise(models.Model):
+    Image = models.ImageField()
+    Exer_Name = models.CharField(max_length=50)
+    Description = models.TextField()
+    Subcategory = models.ForeignKey(to = 'WorkoutSubcategory', on_delete = models.CASCADE)
+
+    class Meta:
+        db_table = "SubExercise"
+
+
+class CatExercise(models.Model):
     Image = models.ImageField()
     Exer_Name = models.CharField(max_length=50)
     Description = models.TextField()
     Category = models.ForeignKey(to = 'WorkoutCategory', on_delete = models.CASCADE)
 
     class Meta:
-        db_table = "WorkoutExercise"
+        db_table = "CatExercise"
+
+
+class Exec_Sub_Info(models.Model):
+    Name = models.CharField(max_length=50)
+    Description = models.TextField()
+    Subcategory = models.ForeignKey(to = 'WorkoutSubcategory', on_delete = models.CASCADE)
+
+    class Meta:
+        db_table = "Exec_Sub_Info"
 
 
 class WorkoutSubcategory(models.Model):
     Image = models.ImageField()
-    Lifting_Name = models.CharField(max_length=50)
+    Sub_Name = models.CharField(max_length=50)
     Description = models.TextField()
+    Category = models.ForeignKey(default=5, to = 'WorkoutCategory', on_delete = models.CASCADE)
+
+    def __str__(self):
+        return self.Sub_Name
 
     class Meta:
         db_table = "WorkoutSubcategory"
@@ -63,6 +86,25 @@ class Packages(models.Model):
 
     class Meta:
         db_table = "Packages"
+
+
+class Trainer(models.Model):
+    Name = models.CharField(max_length=50)
+    Image = models.ImageField()
+    Work = models.CharField(max_length=50)
+    Weight = models.CharField(max_length=10)
+    Height = models.CharField(max_length=50)
+    Email = models.EmailField()
+    Contact = models.IntegerField()
+    Address = models.TextField()
+    Specialities = models.TextField()
+    Qualification = models.TextField()
+    Achievement = models.TextField()
+    Description = models.TextField()
+
+    class Meta:
+        db_table = "Trainer"
+
 
     
 

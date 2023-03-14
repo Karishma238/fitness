@@ -1,0 +1,56 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2 Gym Bicepts-Categories</title>
+    <link rel="stylesheet" href="{% static 'css/workoutExercise.css' %}">
+
+<body>
+
+
+
+
+
+    <section class="workout-home">
+        <h1>Transform your life for better</h1>
+        <p>If you want something you’ve bever hard, you must be willing to do something you’ve never done.</p>
+        <a href="#" class="start-btn">START</a>
+    </section>
+
+
+
+    <section class="crossfit">
+        
+        <h1 class="crossfit-heading">Top {{sub.Name}} Exercises : Your 45-Minutes Ultimate {{sub.Name}} Workout</h1>
+        <p>{{sub.Description|linebreaks}}</p>
+        <h2>One of the Top {{sub.Name}} exercises to Build {{sub.Name}} Muscles </h2>
+
+        {% for exe in exer %}
+        <div class="crossfit-container">
+            <div class="crossfit-img-data">
+                <!-- <img id="sprint" src="img/deadlift.gif" alt=""> -->
+            </div>
+            <h1>{{exe.Exer_Name}}</h1>
+            <p>{{exe.Description}}</p>
+        </div>
+        {% endfor %}
+
+
+        
+
+
+    </section>
+
+
+</body>
+
+</html>
+
+{% endblock %}

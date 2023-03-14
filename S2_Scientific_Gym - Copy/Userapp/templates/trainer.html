@@ -13,34 +13,6 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo"><img src="img/logo-1.png" alt=""></div>
-        <input type="checkbox" name="" id="check">
-        <label for="check">
-            <!-- <i id="search-icon" class="uil uil-search"></i> -->
-            <i class="fas fa-bars"></i>
-        </label>
-
-
-        <ul class="list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="workout.html">Workout</a></li>
-            <li><a href="trainer.html">Trainer</a></li>
-            <li><a href="healthy-lives.html">Healthy Lives</a></li>
-        </ul>
-        <ul class="social-media">
-            <li>
-                <!-- <i style="color: white; background-color: cadetblue;" class="uil uil-search"></i> -->
-                <!-- <input type="text" placeholder="search here"> -->
-            </li>
-            <li><a href="login.html" class="login">Login</a></li>
-        </ul>
-    </nav>
-
-
-
 
 
 
@@ -53,209 +25,25 @@
 
 
 
-
-
-
-
-
-
     <!-- Our Professional Trainer -->
-
+    {% for trn in profile %}
     <section class="trainer-details">
         <h1 class="trainer-details-heading">Our Professional Trainers</h1>
         <div class="trainer-container">
             <div class="trainer-left-container">
-                <img src="img/Weight-lifting.jpg" alt="">
+                <img src="{{trn.Image.url}}" alt="">
             </div>
 
             <div class="trainer-right-container">
-                <h1>Trainer Name - Weight-Lifting</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit alias recusandae quis. Nulla quaerat, excepturi sapiente voluptates alias delectus recusandae blanditiis. Quibusdam officiis rem ullam similique in ea corrupti ducimus?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident excepturi blanditiis adipisci, cupiditate rerum beatae consequuntur, distinctio fugit ea dolore natus? Ea voluptatum distinctio dignissimos repellendus laudantium enim non deleniti?
-                </p>
-                <a href="trainer-profile1.html" id="trainer-view-profile">View Profile</a>
+                <h1>{{trn.Name}} - {{trn.Work}}</h1>
+                <p>{{trn.Description}} </p>
+                <a href="/TrainerProfile/{{trn.id}}" id="trainer-view-profile">View Profile</a>
             </div>
         </div>
 
     </section>
+   {% endfor %}
 
-
-    <section class="trainer-2">
-
-        <div class="trainer-container">
-            <div class="trainer-left-container">
-                <img src="img/treadmill-e.jpg" alt="">
-            </div>
-
-            <div class="trainer-right-container">
-                <h1>Trainer Name - Cardio</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit alias recusandae quis. Nulla quaerat, excepturi sapiente voluptates alias delectus recusandae blanditiis. Quibusdam officiis rem ullam similique in ea corrupti ducimus?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident excepturi blanditiis adipisci, cupiditate rerum beatae consequuntur, distinctio fugit ea dolore natus? Ea voluptatum distinctio dignissimos repellendus laudantium enim non deleniti?
-                </p>
-                <a href="trainer-profile2.html" id="trainer-view-profile">View Profile</a>
-            </div>
-        </div>
-
-    </section>
-
-
-
-
-
-
-    <!-- Professional Trainer-3 Section -->
-
-    <section class="trainer-3">
-
-        <div class="trainer-container">
-            <div class="trainer-left-container">
-                <img src="img/crossfit.jpg" alt="">
-            </div>
-
-            <div class="trainer-right-container">
-                <h1>Trainer Name - Crossfit</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit alias recusandae quis. Nulla quaerat, excepturi sapiente voluptates alias delectus recusandae blanditiis. Quibusdam officiis rem ullam similique in ea corrupti ducimus?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident excepturi blanditiis adipisci, cupiditate rerum beatae consequuntur, distinctio fugit ea dolore natus? Ea voluptatum distinctio dignissimos repellendus laudantium enim non deleniti?
-                </p>
-                <a href="trainer-profile3.html" id="trainer-view-profile">View Profile</a>
-            </div>
-        </div>
-
-    </section>
-
-
-
-
-
-    <!-- Professional Trainer-4 Section -->
-
-    <section class="trainer-4">
-
-        <div class="trainer-container">
-            <div class="trainer-left-container">
-                <img src="img/kickboxing-4.jpg" alt="">
-            </div>
-
-            <div class="trainer-right-container">
-                <h1>Trainer Name - Kickboxing</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit alias recusandae quis. Nulla quaerat, excepturi sapiente voluptates alias delectus recusandae blanditiis. Quibusdam officiis rem ullam similique in ea corrupti ducimus?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident excepturi blanditiis adipisci, cupiditate rerum beatae consequuntur, distinctio fugit ea dolore natus? Ea voluptatum distinctio dignissimos repellendus laudantium enim non deleniti?
-                </p>
-                <a href="trainer-profile4.html" id="trainer-view-profile">View Profile</a>
-            </div>
-        </div>
-
-    </section>
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Starting of Footer Section -->
-
-    <footer class="footer">
-        <h1 class="footer-head">Get Offer Updates</h1>
-        <div class="footer-subscribe">
-            <form action="">
-                <input type="text" placeholder="example@gmail.com">
-                <input type="submit" value="Subscribe">
-            </form>
-        </div>
-
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-column">
-                    <img src="img/logo-1.png" width="120px" alt="">
-                </div>
-
-
-                <div class="footer-column">
-                    <h4 class="footer-heading">Quick Link</h4>
-                    <ul>
-                        <li><a href="#">Membership</a></li>
-                        <li><a href="#">Workout</a></li>
-                        <li><a href="#">Trainer</a></li>
-                        <li><a href="#">Healthy Lives</a></li>
-                        <li><a href="#">Blogs</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-heading">About</h4>
-                    <ul>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Tutorial</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Others</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-heading">Services</h4>
-                    <ul>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">Live Chat</a></li>
-                        <li><a href="#">Pick & Drop</a></li>
-                        <li><a href="#">Others</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-contact-column">
-                    <h4 class="footer-heading">Contact Us</h4>
-                    <ul>
-                        <!-- <li style="text-transform: lowercase;"><a href="#"><span><i class="uil uil-envelope-alt"></i></span>example@gmail.com</a></li> -->
-                        <li style="text-transform: lowercase;"><a href="#"><span><i
-                                        class="uil uil-envelope-alt"></i></span>example@gmail.com</a></li>
-                        <li><a href="#"><span><i class="uil uil-phone"></i></span>+91 1231231230</a></li>
-                        <li><a href="#"><span><i class="uil uil-map-marker"></i></span>S2 Scientific Fitness Gym,
-                                Nagpur, India, 440024 </a></li>
-                    </ul>
-                </div>
-
-
-            </div>
-            <div class="footer-social-media">
-                <ul>
-
-                    <li>
-                        <h3 style="font-size: 20px;"><a href="#">Follow Us On:</a></h3>
-                    </li>
-                    <li><i class="uil uil-facebook-f"></i>
-                        <i class="uil uil-instagram"></i>
-                        <i class="uil uil-twitter"></i>
-                        <i class="uil uil-youtube"></i>
-                        <i class="uil uil-google"></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-
-    
 
 </body>
 </html>

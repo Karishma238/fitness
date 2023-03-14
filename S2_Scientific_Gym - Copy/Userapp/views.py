@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from Adminapp.models import Register, SignupInfo, WorkoutCategory, WorkoutExercise, WorkoutSubcategory, Packages
+from Adminapp.models import Register, SignupInfo, WorkoutCategory, SubExercise, CatExercise, WorkoutSubcategory, Packages, Exec_Sub_Info, Trainer
 from django.contrib import messages
 
 # Create your views here.
@@ -82,7 +82,8 @@ def membership(request):
 def workout(request):
     catg = WorkoutCategory.objects.all()
     pack = Packages.objects.all()
-    return render(request, "workout.html", {"catg":catg, "pack":pack})
+    trn = Trainer.objects.all()
+    return render(request, "workout.html", {"catg":catg, "pack":pack, "trn":trn})
 
 
 def Subcategory(request):
@@ -90,18 +91,36 @@ def Subcategory(request):
     return render(request, "WorkoutSubcategory.html", {"subcat":subcat})
 
 
-def Exercise(request, did):
-    cat = WorkoutCategory.objects.get(id=did)
-    exer = WorkoutExercise.objects.filter(Category=cat)
-    return render(request, "WorkoutExercise.html", {"exer":exer})
+def ExerciseSub(request, sid):
+    sub = Exec_Sub_Info.objects.get(id=sid)
+    subb = WorkoutSubcategory.objects.get(id=sid)
+    exer = SubExercise.objects.filter(Subcategory=subb)
+    return render(request, "SubcategoryExercise.html", {"sub":sub, "exer":exer })
+
+
+def ExerciseCat(request, cid):
+    cat = WorkoutCategory.objects.get(id=cid)
+    exer = CatExercise.objects.filter(Category=cat)
+    return render(request, "CategoryExercise.html", {"exer":exer })
 
 
 def trainer(request):
-    return render(request, "trainer.html", {})
+    profile = Trainer.objects.all()
+    return render(request, "trainer.html", {"profile":profile})
 
 
-def TrainerProfile(request):
-    return render(request, "TrainerProfile.html", {})
+def TrainerProfile(request, tid):
+    trainer = Trainer.objects.get(id=tid)
+    return render(request, "TrainerProfile.html", {"trainer":trainer})
+
 
 def HealthyLives(request):
     return render(request, "HealthyLives.html", {})
+
+
+def Pay(request):
+    if(request.method == "POST"):
+        if("Username" in request.session):
+            return HttpResponse("payment page")
+        else:
+            return redirect(login)
