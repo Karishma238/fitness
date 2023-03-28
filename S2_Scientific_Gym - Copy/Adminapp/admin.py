@@ -5,22 +5,27 @@ from Adminapp.models import Register, SignupInfo, SubExercise, CatExercise, Work
 
 class RegisterAdmin(admin.ModelAdmin):
     list_display = ('Name', 'Email', 'Phone', 'Location', 'Message')
+    list_per_page = 8
 
 
 class SignupInfoAdmin(admin.ModelAdmin):
     list_display = ('Username', 'Email', 'Password', 'Mobile')
+    list_per_page = 8
 
 
 class SubExerciseAdmin(admin.ModelAdmin):
     list_display = ('Exer_Name', 'Image', 'Description', 'Subcategory')
+    list_per_page = 4
 
 
 class CatExerciseAdmin(admin.ModelAdmin):
     list_display = ('Exer_Name', 'Image', 'Description', 'Category')
+    list_per_page = 4
 
 
 class WorkoutSubcategoryAdmin(admin.ModelAdmin):
     list_display = ('Sub_Name', 'Image', 'Description', 'Category')
+    list_per_page = 5
 
 
 class WorkoutCategoryAdmin(admin.ModelAdmin):
@@ -33,11 +38,12 @@ class PackagesAdmin(admin.ModelAdmin):
 
 class Exec_Sub_InfoAdmin(admin.ModelAdmin):
     list_display = ('Name', 'Description', 'Subcategory')
+    list_per_page = 4
 
 
 class TrainerAdmin(admin.ModelAdmin):
     list_display = ('Name','Image','Work','Weight','Height','Email','Contact','Address','Specialities','Qualification','Achievement','Description')
-
+    
 
 admin.site.register(Register, RegisterAdmin)
 admin.site.register(SignupInfo, SignupInfoAdmin)

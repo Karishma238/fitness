@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from Adminapp.models import Register, SignupInfo, WorkoutCategory, SubExercise, CatExercise, WorkoutSubcategory, Packages, Exec_Sub_Info, Trainer
 from django.contrib import messages
+import razorpay
 
 # Create your views here.
 
