@@ -107,32 +107,37 @@
         <div class="plan-container">
             {% for pac in pack %}
             {% if pac.id == 2 %}
+            <form method="post" action="/pay">
+                {% csrf_token %}
+                <div class="plan-content special-plan">
+                    <h1>{{pac.Duration}}</h1>
+                    <h4 class="price">Rs. {{pac.Price}}/-
+                    </h4>
+                    <span class="free">Single Class</span>
 
-            <div class="plan-content special-plan">
-                <h1>{{pac.Duration}}</h1>
-                <h4 class="price">Rs. {{pac.Price}}/-
-                </h4>
-                <span class="free">Single Class</span>
+                    <ul>
+                        <li>{{pac.Include|linebreaks}}</li>
+                    </ul>
+                    <button type="submit">Buy Now</button>
+                </div>
+            </form>
 
-                <ul>
-                    <li>{{pac.Include|linebreaks}}</li>
-                </ul>
-                <a href="#">Buy Now</a>
-            </div>
 
             {% else %}
+            <form method="post" action="/pay">
+                {% csrf_token %}
+                <div class="plan-content">
+                    <h1>{{pac.Duration}}</h1>
+                    <h4 class="price">Rs. {{pac.Price}}/-
+                    </h4>
+                    <span class="free">Single Class</span>
 
-            <div class="plan-content">
-                <h1>{{pac.Duration}}</h1>
-                <h4 class="price">Rs. {{pac.Price}}/-
-                </h4>
-                <span class="free">Single Class</span>
-
-                <ul>
-                    <li>{{pac.Include|linebreaks}}</li>
-                </ul>
-                <a href="#">Buy Now</a>
-            </div>
+                    <ul>
+                        <li>{{pac.Include|linebreaks}}</li>
+                    </ul>
+                    <button type="submit">Buy Now</button>
+                </div>
+            </form>
             {% endif %}
             {% endfor %}
 

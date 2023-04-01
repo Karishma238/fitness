@@ -353,6 +353,14 @@ h4 {
     border-radius: 8px;
 }
 
+.plan-content button {
+    border-color: #F05F28;
+    padding: 7px 30px;
+    color: white;
+    background-color: #F05F28;
+    margin: 20px;
+    border-radius: 8px;
+}
 
 
 
